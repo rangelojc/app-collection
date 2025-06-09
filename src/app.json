@@ -1,0 +1,10 @@
+{
+  "app-name": "HTML SCRAPPER",
+  "logo": "",
+  "default-lang": "en",
+  "default-theme": "dark",
+  "default-title": "HTML SCRAPPER Admin",
+  "export-file-prefix": "html-scrapper",
+  "zustand-app-store": "html-scrapper-zustand",
+  "default-canonical-link": "/#"
+}
