@@ -42,7 +42,11 @@ const SalesScrapper = () => {
       <ContentTitle text={"Sales Scrapper"} />
       <ContentBox>
         <ContentHeader>
-          <ExcelExportButton data={scrappedData} category="sales" />
+          <ExcelExportButton
+            data={scrappedData}
+            category="sales"
+            disabled={!scrappedData || scrappedData.length === 0}
+          />
         </ContentHeader>
 
         <textarea

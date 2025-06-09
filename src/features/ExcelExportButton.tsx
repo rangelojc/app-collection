@@ -8,11 +8,13 @@ import * as XLSX from "xlsx";
 interface ExcelExportButtonProps<T> {
   data: T[];
   category?: string;
+  disabled?: boolean;
 }
 
 const ExcelExportButton = <T,>({
   data,
   category,
+  disabled,
 }: ExcelExportButtonProps<T>) => {
   const exportToExcel = (data: T[]) => {
     const worksheet = XLSX.utils.json_to_sheet(data);
@@ -32,6 +34,7 @@ const ExcelExportButton = <T,>({
       onClick={() => exportToExcel(data)}
       className="rounded ml-auto"
       size="sm"
+      disabled={disabled}
     >
       <FaRegFileExcel />
       <span>Excel</span>

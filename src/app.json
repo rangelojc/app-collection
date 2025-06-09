@@ -4,7 +4,7 @@
   "default-lang": "en",
   "default-theme": "dark",
   "default-title": "HTML SCRAPPER Admin",
-  "export-file-prefix": "html-scrapper",
+  "export-file-prefix": "scrapper",
   "zustand-app-store": "html-scrapper-zustand",
   "default-canonical-link": "/#"
 }
