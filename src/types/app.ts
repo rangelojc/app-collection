@@ -4,10 +4,8 @@ export enum DateFormats {
   standardFull = "yyyy MMMM Do, hh:mm A",
 }
 
+const BASEURL = "/app-collection";
+
 export enum RouteDefinition {
-  LOGIN = "/login",
-  INDEX = "/",
-  USERS = "/users",
-  ORDERS = "/orders",
-  ORDER_RESULT = "/orders/result",
+  INDEX = BASEURL + "/",
 }
